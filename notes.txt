@@ -1,3 +1,9 @@
-Things I want to do with this code:
+Things I want to do with this project:
 
-1. 
+1. Input custom named projects
+
+2. Input custom named tasks
+
+3. Create moveable task GUI
+
+4. 
