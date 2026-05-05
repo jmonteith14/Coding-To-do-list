@@ -31,11 +31,12 @@ dropped_label.pack()
 dropped_frame.pack(side=tk.LEFT, padx=10, pady=10)
 dropped_frame.pack_propagate(False)
 
-input_task = tk.Entry(root, width=30,)
+input_task = tk.Entry(root, width=30)
 input_task.pack(side=tk.TOP, padx=10, pady=10)
 
 input_button = tk.Button(root, text="Add Task", command=partial(func.add_task, input_task, to_do_frame))
 input_button.pack(side=tk.TOP, padx=10, pady=10)
+
 
 
 root.mainloop()
