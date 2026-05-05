@@ -2,10 +2,9 @@ Things to do with this project:
 
 -* Save tasks to the program
 
-- Add enter keypress to entry
-- Make to-do, in progress, completed, and dropped text box's longer & better
-- Add title text to screen (not title command)
-- Add padding to tasks
+
+- Add scrollbars
+
 
 -? Input custom named projects
 -? Make design cleaner?
