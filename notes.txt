@@ -1,11 +1,16 @@
 Things to do with this project:
 
 -* Save tasks to the program
+-* Have individual project lists
+    - Menu to select project
 
 
 - Add scrollbars
+- Make design more compact
+    - (Move title left and put input/button at the top right)
+- Be able to move tasks to other columns
+    -? Make tasks into buttons that can move
 
 
--? Input custom named projects
--? Make design cleaner?
+-? Make design cleaner
 
