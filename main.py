@@ -43,9 +43,9 @@ completed_frame.pack_propagate(False)
 # Create input entry
 input_task = tk.Entry(root, width=30, relief=tk.SUNKEN)
 input_task.pack(side=tk.TOP, padx=10, pady=10)
-input_task.bind("<Return>", partial(func.add_task, input_task, to_do_frame))
+input_task.bind("<Return>", partial(func.add_task, input_task, to_do_frame, today_frame, in_progress_frame, completed_frame))
 
-input_button = tk.Button(root, text="Add Task", command=partial(func.add_task, input_task, to_do_frame))
+input_button = tk.Button(root, text="Add Task", command=partial(func.add_task, input_task, to_do_frame, today_frame, in_progress_frame, completed_frame))
 input_button.pack(side=tk.TOP, padx=10, pady=10)
 
 
