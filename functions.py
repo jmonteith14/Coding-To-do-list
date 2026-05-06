@@ -1,5 +1,7 @@
+# Imports
 import tkinter as tk
 
+# Create function to add/create tasks
 def add_task(input_object, to_do_frame, event=None):
     task_entry = input_object.get()
     if task_entry != "":

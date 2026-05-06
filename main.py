@@ -1,17 +1,21 @@
+# Imports
 import tkinter as tk
 from functools import partial
 import functions as func
 
+# Root creation
 root = tk.Tk()
 root.title("NovaKanban")
 root.geometry("1200x500")
 root.configure(bg="#222222")
 
+# Create title
 title_frame = tk.Frame(root)
 title_label = tk.Label(master=title_frame, text="NovaKanban", font=("Sitka Heading Bold", 30))
 title_label.pack()
 title_frame.pack(side=tk.TOP, padx=5, pady=5)
 
+# Create columns
 to_do_frame = tk.Frame(root, bg="#464646", width=200, height=400)
 to_do_label = tk.Label(master=to_do_frame, bg="#E3DB62", text='To-do', font=("Sitka Text Bold", 15))
 to_do_label.pack(fill=tk.BOTH)
@@ -36,6 +40,7 @@ completed_label.pack(fill=tk.BOTH)
 completed_frame.pack(side=tk.LEFT, padx=10, pady=10)
 completed_frame.pack_propagate(False)
 
+# Create input entry
 input_task = tk.Entry(root, width=30, relief=tk.SUNKEN)
 input_task.pack(side=tk.TOP, padx=10, pady=10)
 input_task.bind("<Return>", partial(func.add_task, input_task, to_do_frame))
